@@ -1,0 +1,23 @@
+@import '../../mixins.scss';
+
+.todoActions{
+    bottom:0px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    @include absoluteCenter(horizontal);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    .button{
+        @include buttonNulled;
+        padding: 7px 15px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000;
+        border: 1px solid transparent;
+        &.active{
+            border-radius: 16px;
+            border: 1px solid #ecd8d8  ;
+        }
+    }
+}

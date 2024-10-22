@@ -1,0 +1,23 @@
+@import '../../mixins.scss';
+
+.form-overlay {
+    background-color: #fff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    @include d-flex;
+
+    .todo-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 16px;
+    }
+
+    .submit-button {
+        @include buttonNulled;
+        border-left: 1px solid #F8F7F5;
+        padding: 0 7px;
+    }
+}

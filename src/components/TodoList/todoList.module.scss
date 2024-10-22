@@ -1,0 +1,28 @@
+.todoItemsOverlay {
+    background-color: #fff;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    overflow: hidden;
+
+    .todolistOverlay {
+        max-height: 500px;
+        min-height: 500px;
+        overflow: auto;
+        padding-bottom: 50px;
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+}
